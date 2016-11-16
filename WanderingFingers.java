@@ -4,6 +4,34 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/* Challenge: https://www.reddit.com/r/dailyprogrammer/comments/53ijnb/20160919_challenge_284_easy_wandering_fingers/
+ output word "qwertyuytresdftyuioknn":
+ 
+/----Output----\ 
+question
+quin
+\--------------/
+
+ output word "gijakjthoijerjidsdfnokg":
+ 
+/----Output----\ 
+gaeing
+gag
+gang
+gathering
+gating
+gieing
+gig
+going
+gong
+goring
+grig
+grog
+\--------------/
+*/
+
+
+
 public class WanderingFingers {
 
 	public static void main(String[] args) throws FileNotFoundException {
