@@ -5,15 +5,17 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 /* Challenge: https://www.reddit.com/r/dailyprogrammer/comments/53ijnb/20160919_challenge_284_easy_wandering_fingers/
- output word "qwertyuytresdftyuioknn":
- 
+This program should find all possible words (5+ characters) that can be derived from the strings supplied.
+Used http://norvig.com/ngrams/enable1.txt as my search dictionary.
+
+input word "qwertyuytresdftyuioknn":
 /----Output----\ 
 question
 quin
 \--------------/
 
- output word "gijakjthoijerjidsdfnokg":
- 
+
+input word "gijakjthoijerjidsdfnokg":
 /----Output----\ 
 gaeing
 gag
@@ -30,8 +32,6 @@ grog
 \--------------/
 */
 
-
-
 public class WanderingFingers {
 
 	public static void main(String[] args) throws FileNotFoundException {
@@ -40,8 +40,8 @@ public class WanderingFingers {
 		Scanner scanner = new Scanner(nFile);
 		
 		String currentword;
-		String word = "qwertyuytresdftyuioknn";
-//		String word = "gijakjthoijerjidsdfnokg";
+		String word = "qwertyuytresdftyuioknn"; //first input String
+//		String word = "gijakjthoijerjidsdfnokg"; //second input String
 	    String output = "/----Output----\\ \n";
 		
 		while(scanner.hasNextLine()) {
